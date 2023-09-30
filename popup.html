@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Jokes</title>
+    <title>Calculator</title>
 </head>
 <body>
-    <p id="heading"></p>
-    <button id="addBtn" class="btn">+</button>
-    <button id="subBtn" class="btn">-</button>
-    <button id="mulBtn" class="btn">x</button>
-    <button id="divBtn" class="btn">/</button>
-    <br><br>
-    <input type="text" id="num1" placeholder="Enter first number">
-    <h3 id="calType">+</h3>
-    <input type="text" id="num2" placeholder="Enter second number">
-    <br><br>
-    <button id="calculateBtn">Calculate</button>
-    <p id="answerArea"></p>
+    <div class="container">
+        <h3 id="heading">Calculator</h3>
+        <div class="input-fields">
+            <input type="number" id="num1" placeholder="input 1">
+            <input type="button" disabled id="calType" value="+">
+            <input type="number" id="num2" placeholder="input 2">
+            <input type="number" id="result" disabled>
+        </div>
+        <div class="calcualte-buttons-container">
+            <button title="addition" id="addBtn" class="btn">+</button>
+            <button title="subtraction" id="subBtn" class="btn">-</button>
+            <button title="multiplication" id="mulBtn" class="btn">x</button>
+            <button title="division" id="divBtn" class="btn">/</button>
+            <button title="power" id="powerBtn" class="btn">^</button>
+            <button title="permutation" id="permutationBtn" class="btn">P</button>
+            <button title="combination" id="combinationBtn" class="btn">C</button>
+            <button title="" id="btnx" class="btn" disabled>x</button>
+            <button title="" id="btnx" class="btn" disabled>x</button>
+            <button title="" id="btnx" class="btn" disabled>x</button>
+            <button title="" id="btnx" class="btn" disabled>x</button>
+            <button title="" id="btnx" class="btn" disabled>x</button>
+        </div>
+        <button id="calculateBtn">Calculate</button>
+        <p id="footerText">Hope you Enjoy!!</p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
